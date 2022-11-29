@@ -5,8 +5,7 @@
 }
 
 .footer__container {
-    display: flex;
-    align-items: baseline;
+    @include centered(flex, center, baseline);
 }
 
 .footer__address-block {
@@ -66,8 +65,7 @@
 }
 
 .join-up__list {
-    display: flex;
-    justify-content: center;
+    @include centered(flex, center, center);
 }
 
 .join-up__item {
@@ -81,14 +79,12 @@
 }
 
 .join-up__social-link {
-    display: flex;
-    align-items: center;
+    @include centered(flex, center, center);
     width: 100%;
     height: 100%;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     color: $bg-color-main;
-    justify-content: center;
     @include animation(background-color);
 
     &:hover,
@@ -98,8 +94,7 @@
 }
 
 .join-up__social-icon {
-    display: flex;
-    justify-content: center;
+    @include centered(flex, center, center);
     fill: currentColor;
 }
 
@@ -136,9 +131,7 @@
 }
 
 .subscription__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centered(flex, center, center);
 
     &::after {
         content: '';
@@ -151,5 +144,5 @@
 }
 
 .subscription__wrapper {
-    display: flex;
+    @include centered(flex, center, center);
 }

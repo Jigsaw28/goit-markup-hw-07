@@ -29,8 +29,7 @@
 }
 
 .page__list-filter {
-    display: flex;
-    justify-content: center;
+    @include centered(flex, center, center);
     margin-bottom: 50px;
 }
 
@@ -41,10 +40,9 @@
 }
 
 .page__list-menu {
+    @include centered(flex, center, center);
     flex-basis: calc((100% - 60px)/3);
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
 }
 

@@ -1,7 +1,6 @@
 .auth-nav {
-  display: flex;
+  @include centered(flex, flex-start, center);
   margin-left: auto;
-  align-items: center;
 }
 
 .auth-nav__item {
@@ -11,12 +10,11 @@
 }
 
 .auth-nav__link {
-  align-items: center;
+  @include centered(flex, flex-start, center);
   font-weight: 500;
   line-height: 1.4px;
   letter-spacing: 0.02em;
   color: $silver-color;
-  display: flex;
   padding: 32px 0;
   @include animation(color);
 

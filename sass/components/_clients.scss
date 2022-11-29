@@ -8,13 +8,11 @@
 }
 
 .clients__list {
-    display: flex;
-    justify-content: center;
+    @include centered(flex, center);
 }
 
 .clients__icon {
-    display: flex;
-    justify-content: center;
+    @include centered(flex, center);
 }
 
 .clients__item {
@@ -28,12 +26,10 @@
 }
 
 .clients__link {
+    @include centered(flex, center, center);
     width: 100%;
     height: 100%;
-    display: flex;
     border: 1px solid #AFB1B8;
-    justify-content: center;
-    align-items: center;
     border-radius: 4px;
     color: #AFB1B8;
     @include animation(color);

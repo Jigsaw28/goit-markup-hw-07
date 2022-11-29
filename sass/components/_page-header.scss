@@ -1,13 +1,11 @@
 .page-header {
-  display: flex;
-  justify-content: center;
+  @include centered(flex, center, center);
   background-color: $bg-color-main;
   margin-bottom: 0;
   border-bottom: 1px solid #ececec;
 
   .page-header__nav {
-    display: flex;
-    align-items: center;
+    @include centered(flex, center, center);
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;

@@ -7,9 +7,7 @@
 }
 
 .features__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centered(flex, center, center);
     width: 270px;
     height: 120px;
     background-color: $bg-our-team;
@@ -17,7 +15,7 @@
 }
 
 .features__list {
-    display: flex;
+    @include centered(flex, start-end, stretch);
 }
 
 .features__item {

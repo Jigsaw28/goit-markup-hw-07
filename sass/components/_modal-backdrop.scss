@@ -28,21 +28,20 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     transform: translate(-50%, -50%) scale(1);
     @include animation(transform);
+
     .backdrop.is-hidden & {
-            transform: translate(-50%, -50%) scale(0.5);
-        }
+        transform: translate(-50%, -50%) scale(0.5);
+    }
 }
 
 .modal__btn {
+    @include centered(flex, center, center);
     position: absolute;
     top: 8px;
     right: 8px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: $bg-color-main;
     border: 1px solid rgba(0, 0, 0, 0.1);
 

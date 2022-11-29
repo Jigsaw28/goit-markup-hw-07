@@ -1,5 +1,5 @@
 .nav__site-nav {
-  display: flex;
+  @include centered(flex, center, center);
   margin-left: 93px;
 }
 
